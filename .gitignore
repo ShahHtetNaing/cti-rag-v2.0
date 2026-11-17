@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.vercel/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store

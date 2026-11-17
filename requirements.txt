@@ -1,0 +1,22 @@
+# Python dependencies for notebook/CTI_RAG_Assistant.ipynb (Google Colab, GPU runtime).
+# The notebook installs these itself in its first code cell.
+bitsandbytes
+chromadb
+gradio>=6,<7
+datasets
+sentence-transformers
+transformers
+accelerate
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-text-splitters
+rank-bm25
+fastapi
+uvicorn
+requests
+pandas
+numpy
+opentelemetry-api>=1.39,<=1.42.1
+opentelemetry-sdk>=1.39,<=1.42.1
