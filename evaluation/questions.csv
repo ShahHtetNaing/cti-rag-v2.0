@@ -1,0 +1,10 @@
+category,mode,question
+historical,cti,What do historical reports state about MiniDuke PDF zero-day attacks and its micro backdoor?
+ransomware,cti,"What ransomware-group victim claims are recorded for healthcare organisations, and what does the dataset actually establish?"
+definition_mitigation,cti,What is a wiper attack and what mitigations are documented in the selected datasets?
+case_studies,cti,Give two documented healthcare ransomware incident cases. Include actual losses only when reported.
+out_of_scope,cti,What was the exact financial loss of the 2031 Mars colony ransomware attack?
+email_phishing,email,"Subject: Urgent account suspension
+From: security@example-mail.com
+
+Your account will be closed today. Verify your password immediately using https://example.invalid/verify."
