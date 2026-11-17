@@ -39,7 +39,12 @@ function readInitialConnection(): Connection {
   const params = new URLSearchParams(window.location.search);
   const fromUrl = params.get("backend");
   const keyFromUrl = params.get("key");
-  if (fromUrl) localStorage.setItem(STORAGE_URL, normaliseUrl(fromUrl));
+  if (fromUrl) {
+    const url = normaliseUrl(fromUrl);
+    // Never send a saved key to a backend it was not saved for.
+    if (url !== localStorage.getItem(STORAGE_URL) && !keyFromUrl) localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem(STORAGE_URL, url);
+  }
   if (keyFromUrl) localStorage.setItem(STORAGE_KEY, keyFromUrl.trim());
   if (fromUrl || keyFromUrl) {
     params.delete("backend");
